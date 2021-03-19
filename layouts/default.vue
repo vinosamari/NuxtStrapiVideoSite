@@ -17,16 +17,17 @@
   display: flex;
   height: 7vh;
   width: 100%;
-  background-color:#3b8070;
+  background-color: #1b2845;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 
 #navbar a{
   color: #fff;
   text-decoration: none;
-  margin-right: 20px;
-  background-color: #0e352c;
+  margin: 20px 40px;
+  background-color: #65afff;
   padding: 0.5rem 1rem;
   border-radius: 20%;
   text-transform: uppercase;
@@ -40,7 +41,7 @@
 }
 
 .navbarLinks {
-  margin: auto;
+  margin: 20px auto;
   max-width: 800px;
 }
 

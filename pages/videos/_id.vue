@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import {mapState} from 'vuex';
 export default {
   // USING THE EMPTY TITLE VALUE HELPS FOR ELEMENTS WITHOUT TITLES FOR THE TITLETEMPLATE
   head() {
@@ -13,12 +14,21 @@ export default {
       titleTemplate : `%s ${this.video.Title}`
     }
   },
-  async asyncData({$axios, params}) {
+  async fetch({$axios, params, store}) {
     let resp = await $axios.get(`/videos/${params.id}`);
     let video = resp.data;
-    return {
-      video
-    };
+    store.commit('SET_CURRENT_VIDEO', video)
+  },
+  computed: {
+    // USE MAPSTATE
+    ...mapState({
+      video: "currentVideo"
+    })
+
+    // OR A REGULAR COMPUTE 
+    // video(){
+    //   return this.$store.state.currentVideo
+    // }
   }
 };
 </script>

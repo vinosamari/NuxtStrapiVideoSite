@@ -2,6 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title">
+        <strong>WELCOME TO </strong>
         Nuxt Video Central
       </h1>
       <div class="links">
@@ -39,6 +40,11 @@ export default {}
 </script>
 
 <style>
+body{
+  background-color: #274060;
+  color: aliceblue;
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -62,7 +68,6 @@ export default {}
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
   letter-spacing: 1px;
 }
 
@@ -72,6 +77,10 @@ export default {}
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
+}
+
+.links a {
+  color: aliceblue;
 }
 
 .links {

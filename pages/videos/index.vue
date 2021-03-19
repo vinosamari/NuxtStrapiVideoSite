@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="videoList">
     <h1>This is the <strong>Videos Page</strong></h1>
     <!-- ACCESS THE VIDEOS FROM THE STORE.STATE.VIDEOS ARRAY -->
-    <div v-for="video in $store.state.videos" :key="video.id">
+    <div class="links" v-for="video in $store.state.videos" :key="video.id">
       <nuxt-link :to="`/videos/${video.id}`">{{ video.Title }}</nuxt-link>
     </div>
     <nuxt-child />
@@ -31,4 +31,26 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.videoList {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.links a{
+  margin-top: 10px;
+  color:aliceblue;
+  text-decoration: none;
+  letter-spacing: .3rem;
+  font-weight: bold;
+}
+
+.links a:hover{
+  color:green;
+  transform: scale(1.5, 1.5);
+
+}
+</style>
