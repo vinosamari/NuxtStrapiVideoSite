@@ -9,7 +9,12 @@
 
 <script>
     export default {
-        props: ['video']
+        props: ['video'],
+        head(){
+            return {
+                title: 'Watch'
+            }
+        }
     }
 </script>
 

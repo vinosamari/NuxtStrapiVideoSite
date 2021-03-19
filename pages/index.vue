@@ -1,26 +1,33 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
       <h1 class="title">
-        nuxtvideotut
+        Nuxt Video Central
       </h1>
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           class="button--green"
         >
-          Documentation
+          All Videos
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey"
+          class="button--green"
         >
-          GitHub
+          Featured Videos
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--green"
+        >
+          Categories
         </a>
       </div>
     </div>

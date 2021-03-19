@@ -14,15 +14,24 @@
 
 <style>
 #navbar {
+  display: flex;
   height: 7vh;
   width: 100%;
   background-color:#3b8070;
+  justify-content: center;
+  align-items: center;
 }
 
 #navbar a{
   color: #fff;
   text-decoration: none;
   margin-right: 20px;
+  background-color: #0e352c;
+  padding: 0.5rem 1rem;
+  border-radius: 20%;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-weight: 700;
 }
 
 .defaultBody {
